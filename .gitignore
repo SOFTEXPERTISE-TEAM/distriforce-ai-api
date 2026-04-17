@@ -21,3 +21,4 @@ Thumbs.db
 # Scripts personnels
 scripts/
 *.sh
+docker-compose.yml
