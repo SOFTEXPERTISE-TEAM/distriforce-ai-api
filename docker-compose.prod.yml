@@ -7,8 +7,6 @@ services:
     restart: always
     volumes:
       - ./src:/var/www/html
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
     networks:
       - distriforce-network
 
@@ -30,9 +28,9 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: distriforce_ai
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-      MYSQL_USER: ${DB_USERNAME}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: 8_Z04?G%WjvwX{pgu9UKArW5~%nzrn
+      MYSQL_USER: xavier
+      MYSQL_PASSWORD: 8_Z04?G%WjvwX{pgu9UKArW5~%nzrn
     ports:
       - "3307:3306"
     volumes:
